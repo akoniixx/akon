@@ -6,6 +6,7 @@ import styles from './blog.module.css'
 import Layout from "../components/layout"
 import ArticlePreview from '../components/article-preview'
 
+
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
@@ -15,9 +16,7 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} >
         <div style={{ background: '#fff' }}>
           <Helmet title={siteTitle} />
-          <div className={styles.hero}>
-            Blog
-          </div>
+          {/* <BlogNav/> */}
           <div className="wrapper">
             <h2 className="section-headline">Recent articles</h2>
             <ul className="article-list">

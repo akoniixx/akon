@@ -18,7 +18,8 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Contentful starter',
+    title: 'Akon9 | Personal blogs where i write whatever i want',
+    author: `@Akon9`,
   },
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [
@@ -29,6 +30,14 @@ module.exports = {
     {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
-    }
+    },
+
+  /*   {
+      
+      options: {
+
+        icon: `src/images/ak9.png`, // This path is relative to the root of the site.
+      },
+    }, */
   ],
 }

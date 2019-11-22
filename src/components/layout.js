@@ -4,6 +4,7 @@ import base from './base.css'
 import Container from './container'
 import Navigation from './navigation'
 
+
 class Template extends React.Component {
   render() {
     const { location, children } = this.props
@@ -16,7 +17,8 @@ class Template extends React.Component {
 
     return (
       <Container>
-        <Navigation />
+         
+      
         {children}
       </Container>
     )

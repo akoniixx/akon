@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import Hero from '../components/hero'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
+import Header from '../components/header'
 
 class RootIndex extends React.Component {
   render() {
@@ -14,9 +15,15 @@ class RootIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} >
+        <Helmet>
+        <link rel="icon" type="image/png" href="static/favicon.ico" sizes="16x16" />
+        </Helmet>
+        
+        
         <div style={{ background: '#fff' }}>
-          <Helmet title={siteTitle} />
-          <Hero data={author.node} />
+           <Helmet title={siteTitle} /> 
+           <Header/>
+          {/* <Hero data={author.node} />  */}
           <div className="wrapper">
             <h2 className="section-headline">Recent articles</h2>
             <ul className="article-list">
