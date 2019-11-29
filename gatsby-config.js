@@ -18,8 +18,8 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: 'Akon9 | Personal blogs where i write whatever i want',
-    author: `@Akon9`,
+    title: 'Akonix | Personal blogs where i write whatever i want',
+    author: `@Akonix`,
   },
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [

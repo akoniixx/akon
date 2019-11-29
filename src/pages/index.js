@@ -6,6 +6,7 @@ import Hero from '../components/hero'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
 import Header from '../components/header'
+import Footer from '../components/footer'
 
 class RootIndex extends React.Component {
   render() {
@@ -19,10 +20,10 @@ class RootIndex extends React.Component {
         <link rel="icon" type="image/png" href="static/favicon.ico" sizes="16x16" />
         </Helmet>
         
-        
+         <Header/>
         <div style={{ background: '#fff' }}>
            <Helmet title={siteTitle} /> 
-           <Header/>
+          
           {/* <Hero data={author.node} />  */}
           <div className="wrapper">
             <h2 className="section-headline">Recent articles</h2>
@@ -37,6 +38,7 @@ class RootIndex extends React.Component {
             </ul>
           </div>
         </div>
+        <Footer/>
       </Layout>
     )
   }
